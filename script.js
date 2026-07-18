@@ -68,7 +68,8 @@ const DATA = {
         "Integrated learning algorithms to identify emerging patterns, optimized to hold 60 FPS.",
         "Integrated AI narration of the patterns on screen, raising accessibility and interactivity."
       ],
-      stack: ["Python", "PygBag", "HTML", "CSS", "OOP"]
+      stack: ["Python", "PygBag", "HTML", "CSS", "OOP"],
+      link: "https://dinhduydev.github.io/automata_of_war/"
     },
     {
       name: "SciEncoder",
@@ -79,7 +80,8 @@ const DATA = {
         "Automated scraping across multiple Diamond Access scientific journals, increasing model accuracy and variety.",
         "Contributed a popular text corpus to the pre-training process."
       ],
-      stack: ["Python", "BeautifulSoup", "BERT"]
+      stack: ["Python", "BeautifulSoup", "BERT"],
+      link: "https://github.com/DinhDuyDev/sciencoder-massai"
     }
   ],
 
@@ -122,7 +124,7 @@ document.getElementById('experience-timeline').innerHTML = DATA.experience.map(j
 
 document.getElementById('project-grid').innerHTML = DATA.projects.map(p => `
   <div class="project-card">
-    <h3>${p.name}</h3>
+    <h3><a href=${p.link}>${p.name}</a></h3>
     <span class="project-date">${p.date}</span>
     <p>${p.blurb}</p>
     <ul>${p.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
