@@ -71,6 +71,20 @@ const DATA = {
       stack: ["Python", "PygBag", "HTML", "CSS", "OOP"],
       link: "https://dinhduydev.github.io/automata_of_war/"
     },
+   {
+      name: "Custom Mini AWS EC2",
+      date: "July - August 2026",
+      blurb: "An emulation of Amazon's AWS EC2.",
+      bullets: [
+            "Built end-to-end replication of AWS EC2, using Docker containers as the compute engine and a custom REST API as the orchestration layer for anyone to learn more about cloud architecture \& Docker environments."
+            "Enforced real CPU and memory limits per container using Docker's nano_cpus and mem_limit configuration. Implemented EC2-style instance-type presets (t3.micro–t3.large)."
+            "Developed a FastAPI backend to manage instances, exposing endpoints to create, list, start, stop, and terminate containerized instances programmatically via the Docker SDK for Python"
+            "Built a curated image catalog abstraction, allowing users to launch pre-configured services (web servers, caches, blank OS instances) without needing to know underlying Docker image names."
+            "Created a React JS user interface with live instance status polling, and full CRUD instance management through the API"
+      ],
+      stack: ["Python", "FastAPI", "Docker"],
+      link: "https://github.com/DinhDuyDev/custom-made-ec2"
+    },
     {
       name: "SciEncoder",
       date: "February — May 2026",
@@ -82,7 +96,7 @@ const DATA = {
       ],
       stack: ["Python", "BeautifulSoup", "BERT"],
       link: "https://github.com/DinhDuyDev/sciencoder-massai"
-    }
+    },
   ],
 
   // Add a new skill group by copying one of these objects.
