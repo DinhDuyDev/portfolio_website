@@ -34,24 +34,34 @@ const DATA = {
   // Add a new job by copying one of these objects. Newest first.
   experience: [
     {
-      role: "Software Engineer",
-      org: "FPT Software · Hoa Lac, Hanoi, Vietnam",
-      date: "June 2026 — August 2026",
+      role: "Software Engineer Intern",
+      org: "FPT Software · Remote",
+      date: "June 2026 — September 2026",
       bullets: [
-        "Analyzed data for a company-wide internal marketing campaign for corporate-sponsored courses.",
-        "Categorized more than 20,000 internal users into low, medium, and high-engagement segments.",
-        "Identified low-engagement users as the target demographic, and low-engaged courses as candidates for removal."
+        "Built an end-to-end data scraping pipeline (ETL) connecting multiple course platforms into FPT's internal course-management platform in NextJS, with timeouts to respect each platform's rate limit.",
+        "Owned the team's data analysis initiative across 160,000+ user records for a company-wide internal marketing campaign on corporate-sponsored courses, using Pandas, NumPy, and K-Means clustering.",
+        "Developed a web game with HTML, CSS, and JS Canvas to introduce FPT's Department of Course Development and Education, bringing its daily routine and mission statement to life."
       ],
-      stack: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-learn"]
+      stack: ["NextJS", "JavaScript", "Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"]
     },
     {
-      role: "Coding Instructor & Hackathon Organizer",
-      org: "BVIS Technology Committee · Hanoi, Vietnam",
-      date: "August 2023 — April 2024",
+      role: "Software Engineer Intern",
+      org: "Aisha · Remote",
+      date: "June 2025 — September 2025",
       bullets: [
-        "Led an intermediate web development class as lead instructor, teaching HTML, CSS, and JavaScript to 35 students.",
-        "Developed 95% of the course's slides and lessons, with roughly 80% of learners approving of the lectures.",
-        "Mentored 2 coworkers and wrote syllabus plans and lecture slides that are still used today."
+        "Owned the security workstream for an AI agent serving industrial factories: hardened authentication with JWT, restricted Azure database ingress to an allow-listed IP range, and rate-limited auth endpoints against credential stuffing.",
+        "Designed the schema and ingestion path into Azure Database for PostgreSQL, replacing scattered local storage with a single database handling 100K+ readings per day.",
+        "Saved 50% on hosting by self-hosting on a local Windows server with WSL2 and Docker, scaling to 5 containerized services and cutting cloud spend by 90%, with per-container memory limits to avoid OOM."
+      ],
+      stack: ["Docker", "WSL2", "Azure", "PostgreSQL", "Python", "Bash", "Linux"]
+    },
+    {
+      role: "Lead Coding Instructor & Hackathon Organizer",
+      org: "BVIS Technology Committee · Hanoi, Vietnam",
+      date: "August 2024 — April 2025",
+      bullets: [
+        "Created and led a web development class as lead instructor, teaching HTML, CSS, and JavaScript with self-authored slides and lectures to 35 students, earning ~90% positive feedback.",
+        "Directly delivered 20+ lessons on HTML structure and good CSS design while mentoring 2 coworkers in class."
       ],
       stack: ["HTML", "CSS", "JavaScript"]
     }
@@ -82,7 +92,7 @@ const DATA = {
             "Built a curated image catalog abstraction, allowing users to launch pre-configured services (web servers, caches, blank OS instances) without needing to know underlying Docker image names.",
             "Created a React JS user interface with live instance status polling, and full CRUD instance management through the API",
       ],
-      stack: ["Python", "FastAPI", "Docker"],
+      stack: ["Python", "FastAPI", "React", "Docker SDK"],
       link: "https://github.com/DinhDuyDev/custom-made-ec2"
     },
     {
